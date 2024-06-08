@@ -3,11 +3,12 @@ let element = document.getElementById("level")
 let count = 0;
 while (element.parentNode != null) {
     if (element.parentNode.nodeName == "HTML") {
-        count++;
+        count+=1;
         alert("The level of the element is: " + count);
         break;
     }
     else {
-        count++;
+        count+=1;
         element = element.parentNode;
     }
+}
